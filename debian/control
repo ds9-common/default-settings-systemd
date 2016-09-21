@@ -1,0 +1,13 @@
+Source: default-settings-systemd
+Section: unknown
+Priority: optional
+Maintainer: Rohan Garg <rohan@kde.org>
+Build-Depends: debhelper (>=9)
+Standards-Version: 3.9.8
+Homepage: https://github.com/ds9-common/default-settings-systemd
+
+Package: default-settings-systemd
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: package to kill jobs after a certain timeout on shutdown
+ This package sets the systemd timeout for a job to 3s whilst killing them

@@ -1,0 +1,5 @@
+default-settings-systemd (0) unstable; urgency=medium
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Rohan Garg <rohan@kde.org>  Wed, 21 Sep 2016 17:11:28 +0200
