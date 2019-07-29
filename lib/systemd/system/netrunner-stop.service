@@ -1,0 +1,18 @@
+[Unit]
+Description=Shuts down the "live" preinstalled system cleanly
+DefaultDependencies=no
+Before=final.target
+After=shutdown.target umount.target plymouth-halt.service plymouth-poweroff.service plymouth-reboot.service
+
+[Service]
+Type=oneshot
+# Latin noto font
+ExecStartPre=-/bin/sh -c "cat /usr/share/fonts/truetype/noto/NotoSans-Regular.ttf > /dev/null"
+ExecStart=/bin/true
+StandardInput=tty-force
+StandardOutput=inherit
+StandardError=inherit
+TTYReset=yes
+
+[Install]
+WantedBy=final.target
