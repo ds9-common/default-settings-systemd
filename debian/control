@@ -8,6 +8,7 @@ Homepage: https://github.com/ds9-common/default-settings-systemd
 
 Package: default-settings-systemd
 Architecture: all
+Multi-Arch: foreign
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: package to kill jobs after a certain timeout on shutdown
  This package sets the systemd timeout for a job to 3s whilst killing them
